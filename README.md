@@ -1,2 +1,2 @@
 # testproject
-this is a test for learning project
+this is a test for java core learning project

@@ -1,0 +1,2 @@
+clone: 默认为浅克隆，当类中引用可变对象的时候需要实现cloneable接口，实现public clone方法。
+在其中调用super.clone去克隆不可变对象，然后调用可变对象的clone方法
