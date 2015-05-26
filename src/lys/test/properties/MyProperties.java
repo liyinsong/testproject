@@ -18,7 +18,12 @@ public class MyProperties {
 		Throwable error = null;
 
 		try {
-			is = MyProperties.class.getResourceAsStream("/lys/test/properties/test.properties");
+			//.class.getResourceAsStream, path 不以’/'开头时默认是从此类所在的包下取资源，以’/'开头则是从ClassPath根下获取
+			
+			//is = MyProperties.class.getResourceAsStream("/lys/test/properties/test.properties");
+			//is = Hello.class.getResourceAsStream("/lys/test/properties/test.properties");
+			is = MyProperties.class.getResourceAsStream("test.properties");
+			
 		} catch (Throwable t) {
 			handleThrowable(t);
 		}
