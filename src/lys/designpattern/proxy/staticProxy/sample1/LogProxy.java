@@ -1,4 +1,4 @@
-package lys.designpattern.proxy;
+package lys.designpattern.proxy.staticProxy.sample1;
 
 public class LogProxy implements Moveable {
 
