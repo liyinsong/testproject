@@ -25,6 +25,7 @@ public class Main {
 		testEnum();
 	
 		//System.out.println(Runtime.getRuntime().availableProcessors());
+	
 	}
 	
 	public static void testEnum () {
