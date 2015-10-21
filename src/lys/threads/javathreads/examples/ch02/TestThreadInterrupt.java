@@ -9,8 +9,10 @@ public class TestThreadInterrupt {
 		System.out.println("main thread current thread : " + Thread.currentThread());
 		
 		Thread thr = new Thread(new Thread01());
-
+		Thread thr2 = new Thread(new Thread01());
+		
 		thr.start();
+		thr2.start();
 		
 		thr.interrupt();
 		
@@ -28,6 +30,8 @@ public class TestThreadInterrupt {
 
 class Thread01 implements Runnable{
 
+	private int age;
+	
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
