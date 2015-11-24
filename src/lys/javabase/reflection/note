@@ -1,0 +1,22 @@
+应用的场景：主要作为框架使用
+
+
+1. 加载类
+	
+	从硬盘中将编译过的字节码加载到内存
+	三种方式
+	
+2. 解析类
+
+Class对象提供下面常用方法：
+
+public Constructor getConstructor(...)
+...    Method getMethod(...)
+...    Field getField(...)
+以上是获得类的public的方法，字段...
+
+...    Constructor getDeclaredConstuctor(...)
+...    Method  getDeclaredMethod(...)
+...
+以上获得private的...
+
