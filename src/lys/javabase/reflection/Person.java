@@ -6,6 +6,8 @@ import java.util.List;
 public class Person {
 
 	public String name = "asdf";
+	private int password = 123;
+	private static int age = 12;
 	
 	public Person() {
 		System.out.println("person");
@@ -42,5 +44,9 @@ public class Person {
 	
 	public static void t5(int a) {
 		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("main method");
 	}
 }

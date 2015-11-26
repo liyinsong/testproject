@@ -10,7 +10,7 @@ public class Demo2 {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Demo2 dem = new Demo2();
-		dem.test4();
+		dem.test5();
 	}
 
 	public void test() throws Exception{
@@ -48,10 +48,20 @@ public class Demo2 {
 	}
 	
 	public void test4() throws Exception{
-		//Person person = new Person();
+		//Person person = new Person(); 静态方法不需要对象
 		Class personClass = Class.forName("lys.javabase.reflection.Person");
 		
 		Method method = personClass.getMethod("t5", int.class);
 		method.invoke(null, 123);
+	}
+	
+	public void test5() throws Exception{
+		Class personClass = Class.forName("lys.javabase.reflection.Person");
+		
+		Method method = personClass.getMethod("main", String[].class);
+		//1. 目的是为了兼容jdk1.4
+		//method.invoke(null, new Object[]{new String[]{"1"}});
+		//2.
+		method.invoke(null, (Object)new String[]{"1"});
 	}
 }
