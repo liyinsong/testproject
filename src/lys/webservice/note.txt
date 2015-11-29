@@ -1,0 +1,19 @@
+TCP和UDP的区别
+TCP时面向连接的
+
+jax-ws时java进行webservice开发的一套api
+
+SEI service endpoint interface
+
+wsimport
+
+WebService三要素：
+SOAP http+xml
+WSDL
+UDDI
+
+XSD xml schema datatype	
+
+使用场景
+
+优缺点
